@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: demo-app
+  namespace: argocd
+spec:
+  project: my-project
+  source:
+<<<<<<< HEAD
+    repoURL: https://github.com/IlayMord/argocd.git
+    path: yamls
+=======
+    repoURL: https://gitlab.com/ilaym1000/argo-demo-repo.git
+    path: .
+>>>>>>> parent of 276d024 (Fix Argo application manifest path and deployment identity)
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
