@@ -7,7 +7,7 @@ spec:
   project: my-project
   source:
     repoURL: https://gitlab.com/ilaym1000/argo-demo-repo.git
-    path: .
+    path: yamls
   destination:
     server: https://kubernetes.default.svc
     namespace: default
