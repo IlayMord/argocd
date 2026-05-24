@@ -6,7 +6,7 @@ metadata:
 spec:
   description: Allow access to a specific Git repository and branch
   sourceRepos:
-    - https://gitlab.com/ilaym1000/argo-demo-repo.git
+    - https://github.com/IlayMord/argocd.git
   destinations:
     - namespace: '*'
       server: https://kubernetes.default.svc

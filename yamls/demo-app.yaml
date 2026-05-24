@@ -6,7 +6,7 @@ metadata:
 spec:
   project: my-project
   source:
-    repoURL: https://gitlab.com/ilaym1000/argo-demo-repo.git
+    repoURL: https://github.com/IlayMord/argocd.git
     targetRevision: master
     path: yamls
   destination:
